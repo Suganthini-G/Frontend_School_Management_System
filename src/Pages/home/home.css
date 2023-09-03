@@ -1,0 +1,86 @@
+.topCard {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+
+  .dashboardContainer{
+    flex:4;
+  }
+
+  .dashboardStats {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+   .statCard {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-right: 20px;
+    flex: 1;
+    margin-bottom: 20px;
+  } 
+  
+  .statDetails {
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  .statCard:hover {
+    transform: scale(1.05);
+  }
+
+  .statCard.statCardClassrooms {
+    background: hsla(28, 98%, 78%, 1);
+
+    background: linear-gradient(90deg, hsla(28, 98%, 78%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(28, 98%, 78%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(28, 98%, 78%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEC28E", endColorstr="#AC8D9A", GradientType=1 );
+  }
+  
+  .statCard.statCardSubjects {
+    background: hsla(360, 94%, 74%, 1);
+
+    background: linear-gradient(90deg, hsla(360, 94%, 74%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(360, 94%, 74%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(360, 94%, 74%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB7D7E", endColorstr="#AC8D9A", GradientType=1 );
+  }
+  
+  .statCard.statCardTeachers {
+    background: hsla(359, 74%, 67%, 1);
+
+    background: linear-gradient(90deg, hsla(359, 74%, 67%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(359, 74%, 67%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(359, 74%, 67%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E96E71", endColorstr="#AC8D9A", GradientType=1 );
+  }
+  
+  .statCard.statCardStudents {
+    background: hsla(345, 37%, 51%, 1);
+
+    background: linear-gradient(90deg, hsla(345, 37%, 51%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(345, 37%, 51%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(345, 37%, 51%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B0526A", endColorstr="#AC8D9A", GradientType=1 ); 
+  }
+  
+  

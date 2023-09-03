@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Topbar from "./components/Topbar/Topbar";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Home from "./Pages/home/Home";
+import ManageStudents from "./Pages/ManageStudents/Managestudents";
+import ManageTeachers from "./Pages/ManageTeachers/Manageteachers";
+import ManageSubjects from "./Pages/ManageSubjects/Managesubject";
+import ManageClassrooms from "./Pages/ManageClassrooms/Manageclassrooms";
+import AllocateSubjects from "./Pages/AllocateSubject/Allocatesubject";
+import AllocateClassrooms from "./Pages/AllocateClassroom/Allocateclassroom";
+import StudentReport from "./Pages/StudentReport/Studentreport";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Topbar />
+      <div className="container">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Managestudents" element={<ManageStudents />} />
+          <Route path="/Manageteachers" element={<ManageTeachers />} />
+          <Route path="/Managesubjects" element={<ManageSubjects />} />
+          <Route path="/Manageclassrooms" element={<ManageClassrooms />} />
+          <Route path="/AllocateSubjects" element={<AllocateSubjects />} />
+          <Route path="/AllocateClassrooms" element={<AllocateClassrooms />} />
+          <Route path="/StudentReport" element={<StudentReport />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
